@@ -1,0 +1,80 @@
+#app {
+  background-color: #eee;
+  width: 600px;
+  padding: 30px;
+  margin: 100px auto;
+  box-shadow: 0 0 7px -2px #000;
+  font-family: "Gluten", cursive;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+}
+
+#app::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-width: 40px;
+  border-style: solid;
+  border-color: transparent transparent transparent darkorange;
+  left: -40px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+#app::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-width: 40px;
+  border-style: solid;
+  border-color: transparent darkorange transparent transparent;
+  right: -40px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+#app label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#app input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+}
+
+#app button {
+  border: none;
+  background-color: darkorange;
+  padding: 13px;
+  border-radius: 20px;
+  font-family: "Gluten", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#app button:hover {
+  background-color: rgb(255, 163, 51);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #9e9e9e;
+  padding: 15px;
+}
